@@ -1,0 +1,153 @@
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  
+  background-color: rgb(31, 31, 31);
+  --cursorFill : url('svg\bucket-droplet.svg') 0 20, auto;
+  --cursorPencil : url('svg\pencil.svg') 0 20, auto;
+  --erase : url('svg\eraser(1).svg') 0 20, auto;
+  --spray : url('svg\spray.svg') 0 20, auto;
+  --brush : url('svg\brush(1).svg') 0 20, auto;
+ 
+}
+ 
+
+body{
+width: 80%;
+padding-top: 20px;
+
+}
+canvas{
+  background-color: #ffffff00;
+  border: 0.1px whitesmoke solid;
+  cursor:  url('svg\Bucket.svg'), url('svg\brush(1).svg'), url('svg\pencilWhite.svg'), url('svg\eraser.svg'), url('svg\spray.svg'), auto;
+  }
+#canvasDiv{
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.inputGrop{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background-color: rgba(192, 191, 191, 0.178);
+  border: 1px grey solid;
+  border-radius: 2%;
+  
+}
+.inputColorColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputToolsColumn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#principal{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+#form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+#inputColor{
+  width: 10vh;
+}
+#lineWidth{
+  width: 30%;
+  text-align: center;
+  font-weight: bold;
+}
+#btnDisplay{
+  width: 20vh;
+}
+#pencilBtn{
+  cursor: var(--cursorPencil) ;
+}
+#brushBtn{
+  cursor: var(--brush);
+}
+#fillBtn{
+  cursor: var(--cursorFill);
+}
+#eraseBtn{
+  cursor: var(--erase);
+}
+#sprayBtn{
+  cursor: var(--spray);
+}
+#sprayBtn img{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#dialog{
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.87);
+  border-radius: 8%;
+  border: 1px grey solid;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#menuDialog{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  width: 100%;
+}
+#menuDialog button{
+  width: 100px;
+  height: 50px;
+}
+#inputFile{
+  display: none;
+}
+#download{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+#link{
+  margin-top: 5px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.87);
+  border-radius: 8%;
+  border: 1px grey solid;
+}
+#columnTitle{
+  
+  display: flex;
+}
+#columnTitle img{
+  width: 30px;
+  height: 50px;
+}
+#spray{
+  width: 30%;
+  text-align: center;
+  font-weight: bold;
+}

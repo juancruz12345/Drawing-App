@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawing App</title>
+  </head>
+  <body>
+   
+    <div id="principal">
+      <div class="inputGrop">
+        <div id="columnTitle">
+          <h2>Drawing App</h2>
+          <img src="svg\brushTitle.svg">
+        </div>
+        <div class="inputColorColumn">
+          <label>Change color</label>
+          <input type="color" id="inputColor">
+          <label>Change line width</label>
+          <input type="number" id="lineWidth">
+          <label>Spray Width</label>
+          <input type="number" id="spray" disabled>
+        
+        </div>
+        <div>
+          <form id="form">
+            <label><span>Width</span></label>
+            <input type="number" id="width"> 
+            <label><span>Height</span></label>
+            <input type="number" id="height"> 
+            <button type="submit" id="resizeBtn">Resize</button>
+          </form>
+        </div>
+        <label>Upload image</label>
+        <input id="inputFile" type="file" >
+        <button id="putImgBtn"><img src="svg\upload.svg"></button>
+        <dialog id="dialog">
+            
+          <form method="dialog" id="formDialog"></form>
+           
+              <menu id="menuDialog">
+                <button type="submit" id="aceptBtn">upload</button>
+                <button type="reset" id="cancel" >cancel</button>
+              </menu>
+           
+          </form>
+        </dialog>
+          <label>Clear canvas</label>
+          <button id="clearBtn">Clear</button>
+        <div class="inputToolsColumn">
+          <label>Tools</label>
+          <div>
+            <button id="pencilBtn" value=cursorPencil><img src="svg\pencilBlack.svg"></button>
+            <button id="brushBtn" value=cursorBrush><img src="svg\brush.svg"></button>
+            <button id="fillBtn" value=cursorBucket><img src="svg\bucketBlack.svg"></button>
+            <button id="eraseBtn" value=cursorEraser><img src="svg\eraserBlack.svg"></button>
+            <button id="sprayBtn" value=cursorSpray><img src="svg\sprayWhite (2).svg"></button>
+            
+          </div>
+          <div id="download">
+            <label>Download</label>
+            <a href="" id="link"><img src="svg\download.svg"></a>
+          </div>
+          
+        </div>
+        
+       </div>
+       
+      <div id="canvasDiv">
+        <canvas></canvas>
+      </div>
+      
+    </div>
+   
+    
+    <script type="module" src="/main.js"></script>
+    
+
+  </body>
+</html>
